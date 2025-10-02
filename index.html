@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1 class="logo">Resume<span>Builder</span></h1>
+    </div>
+    <div class="nav-center" id="navMenu">
+      <a href="home.html">Home</a>
+      <a href="#">Templates</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn">Get Started</button>
+      <span id="menuToggle" class="menu-icon">☰</span>
+    </div>
+  </nav>
+
+  <!-- Categories Section -->
+<section class="categories">
+  <h2>Choose Resume Category</h2>
+  <div class="category-row">
+    <div class="category-item">💻 IT</div>
+    <div class="category-item">🎨 Designer</div>
+    <div class="category-item">📊 Marketing</div>
+    <div class="category-item">📚 Teacher</div>
+    <div class="category-item">⚙️ Engineer</div>
+    <div class="category-item">💼 Business</div>
+  </div>
+</section>
+
+<!-- Templates scrollable section -->
+  <section class="templates">
+    <h2>Select a Template</h2>
+    <div class="template-list" id="templateList">
+      
+      <!-- JS will insert template miniatures here -->
+    </div>
+  </section>
+
+  <!-- Main builder section -->
+  <section class="builder">
+    <!-- Left: input form -->
+    <div class="builder-left">
+      <h2>Enter Your Details</h2>
+      <form id="resumeForm" autocomplete="off">
+        <div class="row">
+          <label>Profile Picture
+  <input type="file" id="inp_picture" accept="image/*">
+</label>
+
+          <label>Name <input type="text" id="inp_name" placeholder="Full Name"></label>
+          <label>Job Title <input type="text" id="inp_title" placeholder="Frontend Developer"></label>
+        </div>
+        <div class="row">
+          <label>Email <input type="email" id="inp_email" placeholder="you@mail.com"></label>
+          <label>Phone <input type="text" id="inp_phone" placeholder="+92 300 0000000"></label>
+        </div>
+        <label>Summary <textarea id="inp_summary" rows="3" placeholder="Short professional summary"></textarea></label>
+        <label>Skills (comma separated) <input type="text" id="inp_skills" placeholder="JavaScript, Python"></label>
+        <label>Experience <textarea id="inp_experience" rows="4" placeholder="Company — Role — Dates"></textarea></label>
+        <label>Education <textarea id="inp_education" rows="3" placeholder="Degree — Institute — Year"></textarea></label>
+        <div class="form-actions">
+          <button type="button" id="clearBtn">Clear</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: preview -->
+    <div class="builder-right">
+      <h2>Resume Preview</h2>
+      <div id="resumePreview" class="preview-area">
+        <p class="empty-note">Select a template above to start →</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
