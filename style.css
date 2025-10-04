@@ -6,6 +6,8 @@
   --radius:10px;
   --maxwidth:1100px;
   color: #111;
+  a { text-decoration: none; }
+
 }
 *{box-sizing:border-box;}
 body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#111;}
