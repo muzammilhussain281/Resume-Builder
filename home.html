@@ -1,225 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume Builder</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="home.css" />
+  <!-- Font Awesome CDN -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
   <!-- Navbar -->
-   <header>
 <nav class="navbar">
   <div class="container nav-flex">
-    <div class="logo">RESUME BUILDER</div>
+    <div class="logo">ResumeSlip</div>
     
-        <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Templates</a>
-      <a href="#">Blogs</a>
-      <a href="#">Contact</a>
-    </div>
+    <!-- Toggle Button -->
+    <button class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </div>
 </nav>
-</header>
 
-  <!-- Hero -->
+
+
+
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <div><h1>RESUME MADE SIMPLE</h1>
-        <p>Build and customize a professional resume in minutes.</p></div>
-        <a href="index.html" class="btn-primary">Create Now <i class="fa-solid fa-arrow-right" id="arrow"></i></a>
+    <div class="container hero-flex">
+      <div class="hero-content">
+        <h1>Build Your Resume<br>in Minutes</h1>
+        <p>Create professional, ATS-friendly resumes with our easy-to-use builder</p>
+        <a href="#" class="btn">Build Now</a>
       </div>
-      <div class="hero-img"></div>
-    </div>
-  </section>
-
-  <!-- Categories -->
-  <section class="categories">
-    <div class="container center">
-      <h3>Build Resumes for Every Profession</h3>
-      <p>Choose your category and start building today</p>
- <div class="categories">
-   <a href=""> <div class="category">
-      <i class="fa-regular fa-calendar"></i>
-      <p>IT &amp; Software Resumes</p>
-    </div></a>
-    <a href=""><div class="category">
-      <i class="fa-solid fa-briefcase"></i>
-      <p>Designer Resumes</p>
-    </div></a>
-    <a href=""><div class="category">
-      <i class="fa-solid fa-chart-line"></i>
-      <p>Business &amp; Management Resumes</p>
-    </div></a>
-     <a href=""><div class="category">
-      <i class="fa-solid fa-bus"></i>
-      <p>Healthcare &amp; Medical Resumes</p>
-    </div></a>
-  </div>
-      <a href="#" class="btn-primary">Explore more</a>
-    </div>
-  </section>
-
-  <!-- How to create -->
-  <section class="how-to">
-    <div class="container">
-      <h1>How to Create a Professional Resume Online?</h1>
-      <div class="how">
-        <b>Choose a Resume Template</b>
-        <p>Pick from modern, professional, and ATS-friendly resume templates designed for every industry</p>
-      </div>
-      <div class="how">
-        <b>Add Your Details</b>
-        <p>Enter your education, work experience, and skills with our simple, guided for.</p>
-      </div>
-      <div class="how">
-        <b>Customize Your Resume</b>
-        <p>Easily edit fonts, colours, and layouts to make your resume unique and job-ready.</p>
-      </div>
-      <div class="how">
-        <b>Preview and Download</b>
-        <p>Check your resume instantly and download it in PDF or word format to apply anywhere</p>
+      <div class="hero-image">
+        <img src="https://www.coolfreecv.com/images/resume_template_bartender.jpg" alt="Resume Preview">
       </div>
     </div>
   </section>
 
-  <!-- Free Templates -->
-  <section class="templates">
-    <div class="container center">
-      <h2>Free Resume Templates</h2>
-      <p>to <span style="color:rgb(0, 136, 255);">edit</span> and <span style="color:rgb(0, 136, 255);">download</span> instantly</p>
-      <div class="card-container">
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="card-content">
-        <p class="category">Category</p>
-        <h3 class="title">Professional</h3>
-        <p class="description">
-          Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-        </p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="card-content">
-        <p class="category">Category</p>
-        <h3 class="title">Business</h3>
-        <p class="description">
-          Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-        </p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="card-content">
-        <p class="category">Category</p>
-        <h3 class="title">Software engineer</h3>
-        <p class="description">
-          Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-        </p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="card-content">
-        <p class="category">Category</p>
-        <h3 class="title">Student</h3>
-        <p class="description">
-          Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-        </p>
-      </div>
-    </div>
-  </div>
-
-      <div class="browse-me">
-        <a href="#" class="btn-primary">Browse more</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
+  <!-- Categories Section -->
+<section class="categories">
   <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <b>How can I make a resume?</b>
-        <span class="faq-toggle">+</span>
+    <h2>Build Resumes for Every Profession</h2>
+    <p>Choose your Category and start Building today</p>
+
+    <div class="categories-list">
+      <div class="category-item">
+       <i class="fa-solid fa-plus"></i>
+        <h4>Health Care & Medical</h4>
       </div>
-      <div class="faq-item">
-        <b>What about premium?</b>
-        <span class="faq-toggle">+</span>
+
+      <div class="category-item">
+        <i class="fa-solid fa-code"></i>
+        <h4>Development & Programming</h4>
       </div>
-      <div class="faq-item">
-        <b>How do I download resume?</b>
-        <span class="faq-toggle">+</span>
+
+      <div class="category-item">
+        <i class="fa-solid fa-briefcase"></i>
+        <h4>Business Management</h4>
       </div>
-      <div class="faq-item">
-        <b>Is my personal information safe?</b>
-        <span class="faq-toggle">+</span>
+
+      <div class="category-item">
+        <i class="fa-solid fa-chart-line"></i>
+        <h4>Marketing & Sales</h4>
       </div>
-      <div class="faq-item">
-        <b>How can we get in touch?</b>
-        <span class="faq-toggle">+</span>
+    </div>
+
+    <a href="#" class="btn view-btn">View all Categories →</a>
+  </div>
+</section>
+
+    <!-- How-to-Section -->
+
+<section class="how-to-section">
+  <div class="container how-flex">
+    <div class="how-image"></div>
+
+    <div class="how-content">
+      <h2>How to <span>Create Resume Online</span>?</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div class="text">
+            <h4>Choose a Resume template</h4>
+            <p>Pick from modern, professional, and ATS-friendly resume templates designed for every industry.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="num">2</div>
+          <div class="text">
+            <h4>Add your details</h4>
+            <p>Enter your education, work experience, and skills with our simple, guided form.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="num">3</div>
+          <div class="text">
+            <h4>Customize your Resume</h4>
+            <p>Easily edit fonts, colors, and layouts to make your resume unique and job-ready.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="num">4</div>
+          <div class="text">
+            <h4>Preview and Download</h4>
+            <p>Check your resume instantly and download it in PDF or Word format.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-top">
-      <h2 class="logo"><i class="fa-regular fa-envelope"></i> Resume Builder</h2>
-    </div>
+<section class="templates-section">
+  <div class="temp-h"> <h2>
+      Free Resume Templates to 
+    </h2>
+    <h2><span class="edit">edit</span> and
+      <span class="download">Download</span> easily</h2>
+</div>
+   <section class="templates-section">
+  <div class="container">
+    <div class="templates-scroll">
+      <div class="templates-wrapper" id="templatesWrapper">
+<!-- Template 1 -->
+        <div class="template-card" id="template1" onclick="window.location.href='template1.html'">
+          <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
+        </div>
 
-    <hr>
+        <!-- Template 2 -->
+        <div class="template-card" onclick="window.location.href='template2.html'">
+          <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
+        </div>
 
-    <div class="footer-content">
-      <!-- Contact -->
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <p>aaaa@gamil.com</p>
-        <p>+92 343784994973</p>
-      </div>
+        <!-- Template 3 -->
+        <div class="template-card" onclick="window.location.href='template3.html'">
+          <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
+        </div>
 
-      <!-- Help -->
-      <div class="footer-column">
-        <h3>Help</h3>
-        <p>absjj</p>
-      </div>
+        <!-- Template 4 -->
+        <div class="template-card" onclick="window.location.href='template4.html'">
+          <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
+        </div>
 
-      <!-- Social Media -->
-      <div class="footer-column">
-        <h3>Follow us</h3>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Template 5 -->
+        <div class="template-card" onclick="window.location.href='template5.html'">
+          <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
+        </div>
+
+        <!-- Template 1 -->
+        <div class="template-card" id="template2" onclick="window.location.href='template1.html'">
+          <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
+        </div>
+
+        <!-- Template 2 -->
+        <div class="template-card" onclick="window.location.href='template2.html'">
+          <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
+        </div>
+
+        <!-- Template 3 -->
+        <div class="template-card" onclick="window.location.href='template3.html'">
+          <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
+        </div>
+
+        <!-- Template 4 -->
+        <div class="template-card" onclick="window.location.href='template4.html'">
+          <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
+        </div>
+
+        <!-- Template 5 -->
+        <div class="template-card" onclick="window.location.href='template5.html'">
+          <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <hr>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <div class="footer-bottom">
-      <p>resumebuilder@ 2025. All rights reserved.</p>
+
+    <div class="explore-btn">
+      <button>Explore more</button>
     </div>
-  </footer>
+  </div>
+</section>
 
-  
+<section class="testimonial-section">
+  <h2>What <span>Clients</span> Says!</h2>
+  <p class="subtitle">See how Resume Slip helped people to achieve their goals!</p>
+
+  <button class="arrow left"><i class="fas fa-chevron-left"></i></button>
+  <div class="testimonial-container" id="testimonialContainer">
+    <!-- Dummy Comment 1 -->
+    <div class="testimonial">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+        <div>
+          <h4>Aryan</h4>
+          <span>Teacher</span>
+        </div>
+      </div>
+      <p>"The resume templates are so professional and easy to customize. It really helped me land my new job!"</p>
+    </div>
+
+    <!-- Dummy Comment 2 -->
+    <div class="testimonial">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+        <div>
+          <h4>Baxley</h4>
+          <span>Digital Marketer</span>
+        </div>
+      </div>
+      <p>"I love how quick and smooth the process was. Definitely one of the best resume builders I’ve used!"</p>
+    </div>
+
+    <!-- Dummy Comment 3 -->
+    <div class="testimonial">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="User">
+        <div>
+          <h4>Abia</h4>
+          <span>Health Care</span>
+        </div>
+      </div>
+      <p>"It’s so easy to edit and download. Highly recommended for anyone applying for new positions!"</p>
+    </div>
+
+    <!-- Dummy Comment 4 -->
+    <div class="testimonial">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="User">
+        <div>
+          <h4>Rayyan</h4>
+          <span>Web Developer</span>
+        </div>
+      </div>
+      <p>"Clean templates and a user-friendly interface — this site made building my resume stress-free."</p>
+    </div>
+
+    <!-- Dummy Comment 5 -->
+    <div class="testimonial">
+      <div class="user-info">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+        <div>
+          <h4>Sara</h4>
+          <span>Graphic Designer</span>
+        </div>
+      </div>
+      <p>"Loved the modern look! My resume finally stands out thanks to these templates."</p>
+    </div>
+  </div>
+  <button class="arrow right"><i class="fas fa-chevron-right"></i></button>
+</section>
+
+
+<section class="faq-section">
+    <h2><span>Frequently</span> asked Questions</h2>
+    <p class="subtitle">Find quick answers to common questions about our tools and services</p>
+
+    <div class="faq">
+      <div class="faq-header">
+        <span>How can I make a resume?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-content">
+        <p>You can easily create your resume by selecting a template, filling in your details, and downloading it directly in PDF format.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-header">
+        <span>Can I download my resume for free?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-content">
+        <p>Yes! All templates are free to edit and download — no hidden charges or subscriptions.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-header">
+        <span>Do I need to create an account?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-content">
+        <p>No account is required. You can start building your resume instantly and download it when ready.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-header">
+        <span>Can I edit my resume after downloading?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-content">
+        <p>Once downloaded, you can re-edit your resume anytime by uploading the file again or starting a new design.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="support">
+      <h3>Still need any help?</h3>
+      <p>Can't find what you're looking for? Our support team is ready to assist you.</p>
+      <button>Contact Support</button>
+    </div>
+  </section>
+
+
+  <!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Resumeslip</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="mailto:Letdigitalfly@gmail.com">Letdigitalfly@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>All Copyright by Resumeslip</p>
+  </div>
+</footer>
+
+
+<script src="home.js"></script>
 </body>
 </html>
