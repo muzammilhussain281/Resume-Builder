@@ -1,96 +1,75 @@
- const toggleBtn = document.getElementById('toggleBtn');
-    const navLinks = document.getElementById('navLinks');
+// Navbar Toggle Functionality
+const toggleBtn = document.getElementById('toggleBtn');
+const navLinks = document.getElementById('navLinks');
 
-    toggleBtn.addEventListener('click', () => {
-      toggleBtn.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        toggleBtn.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
- 
- 
- 
- 
- // Icon change
-  const icon = navToggle.querySelector('i');
-  if (navLinks.classList.contains('active')) {
-    icon.classList.remove('fa-bars');
-    icon.classList.add('fa-times');
-  } else {
-    icon.classList.remove('fa-times');
-    icon.classList.add('fa-bars');
-  }
-;
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
 
 // Close menu when clicking on a link
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    const icon = navToggle.querySelector('i');
-    icon.classList.remove('fa-times');
-    icon.classList.add('fa-bars');
-  });
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        toggleBtn.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
 });
 
-// Your existing code continues below...
-const wrapper = document.getElementById('templatesWrapper');
-// ... rest of your code
-
-
-    // Comments
-
+// Templates Section Scrolling
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("testimonialContainer");
-  const leftBtn = document.querySelector(".arrow.left");
-  const rightBtn = document.querySelector(".arrow.right");
+    // Templates scrolling
+    const templatesWrapper = document.getElementById("templatesWrapper");
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
 
-  if (!container || !leftBtn || !rightBtn) {
-    console.error("⚠️ Arrows or container not found!");
-    return;
-  }
+    if (templatesWrapper && leftArrow && rightArrow) {
+        const scrollAmount = 310;
 
-  leftBtn.addEventListener("click", () => {
-    container.scrollBy({ left: -450, behavior: "smooth" });
+        leftArrow.addEventListener("click", () => {
+            templatesWrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+
+        rightArrow.addEventListener("click", () => {
+            templatesWrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    }
+
+    // Testimonials scrolling
+    const track = document.querySelector('.testimonial-track');
+const testimonials = Array.from(document.querySelectorAll('.testimonial'));
+const prevBtn = document.querySelector('.left-btn');
+const nextBtn = document.querySelector('.right-btn');
+
+let index = 1;
+
+function updateSlider() {
+  const cardWidth = testimonials[0].offsetWidth + 30;
+  track.style.transform = `translateX(-${(index - 1) * cardWidth}px)`;
+
+  testimonials.forEach((t, i) => {
+    t.classList.toggle('active', i === index);
   });
+}
 
-  rightBtn.addEventListener("click", () => {
-    container.scrollBy({ left: 450, behavior: "smooth" });
-  });
+prevBtn.addEventListener('click', () => {
+  index = index > 0 ? index - 1 : 0;
+  updateSlider();
 });
 
-
-// ===== Accordion Functionality =====
-const faqs = document.querySelectorAll('.faq');
-
-faqs.forEach(faq => {
-  faq.addEventListener('click', () => {
-    faq.classList.toggle('active');
-  });
+nextBtn.addEventListener('click', () => {
+  index = index < testimonials.length - 1 ? index + 1 : testimonials.length - 1;
+  updateSlider();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.getElementById("templatesWrapper");
-  const leftArrow = document.getElementById("leftArrow");
-  const rightArrow = document.getElementById("rightArrow");
+updateSlider();
 
-  const scrollAmount = 310; // pixels to scroll
 
-  leftArrow.addEventListener("click", () => {
-    wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  });
+    // FAQ Accordion Functionality
+    const faqs = document.querySelectorAll('.faq');
 
-  rightArrow.addEventListener("click", () => {
-    wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  });
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+    });
 });
-
-
-
-  
-
