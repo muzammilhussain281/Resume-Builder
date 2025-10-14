@@ -1,12 +1,23 @@
-  // Toggle menu open/close
-// Navbar Toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
+ const toggleBtn = document.getElementById('toggleBtn');
+    const navLinks = document.getElementById('navLinks');
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  
-  // Icon change
+    toggleBtn.addEventListener('click', () => {
+      toggleBtn.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleBtn.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+ 
+ 
+ 
+ 
+ // Icon change
   const icon = navToggle.querySelector('i');
   if (navLinks.classList.contains('active')) {
     icon.classList.remove('fa-bars');
@@ -15,7 +26,7 @@ navToggle.addEventListener('click', () => {
     icon.classList.remove('fa-times');
     icon.classList.add('fa-bars');
   }
-});
+;
 
 // Close menu when clicking on a link
 navLinks.querySelectorAll('a').forEach(link => {
@@ -34,8 +45,8 @@ const wrapper = document.getElementById('templatesWrapper');
 
     // Comments
 
- document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("testimonialContainer"); // ✅ FIXED
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("testimonialContainer");
   const leftBtn = document.querySelector(".arrow.left");
   const rightBtn = document.querySelector(".arrow.right");
 
@@ -45,14 +56,13 @@ const wrapper = document.getElementById('templatesWrapper');
   }
 
   leftBtn.addEventListener("click", () => {
-    container.scrollBy({ left: -400, behavior: "smooth" });
+    container.scrollBy({ left: -450, behavior: "smooth" });
   });
 
   rightBtn.addEventListener("click", () => {
-    container.scrollBy({ left: 400, behavior: "smooth" });
+    container.scrollBy({ left: 450, behavior: "smooth" });
   });
 });
-
 
 
 // ===== Accordion Functionality =====
@@ -64,4 +74,23 @@ faqs.forEach(faq => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.getElementById("templatesWrapper");
+  const leftArrow = document.getElementById("leftArrow");
+  const rightArrow = document.getElementById("rightArrow");
+
+  const scrollAmount = 310; // pixels to scroll
+
+  leftArrow.addEventListener("click", () => {
+    wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+
+  rightArrow.addEventListener("click", () => {
+    wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+});
+
+
+
+  
 

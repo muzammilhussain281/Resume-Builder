@@ -20,24 +20,24 @@
 
   <!-- Navbar -->
 <nav class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">ResumeSlip</div>
-    
-    <!-- Toggle Button -->
-    <button class="nav-toggle" id="navToggle">
-      <i class="fas fa-bars"></i>
-    </button>
-    
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Category</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
+    <div class="container nav-flex">
+      <div class="logo">ResumeSlip</div>
+      
+      <button class="toggle-btn" id="toggleBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="categories.html">Category</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
 
 
@@ -83,55 +83,61 @@
       </div>
     </div>
 
-    <a href="#" class="btn view-btn">View all Categories →</a>
+    <a href="" class="btn view-btn">View all Categories → </a>
   </div>
 </section>
 
     <!-- How-to-Section -->
 
+
 <section class="how-to-section">
-  <div class="container how-flex">
-    <div class="how-image"></div>
+  <div class="container">
+    <h2>How to <span>Create Resume Online</span>?</h2>
 
-    <div class="how-content">
-      <h2>How to <span>Create Resume Online</span>?</h2>
-
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div class="text">
-            <h4>Choose a Resume template</h4>
-            <p>Pick from modern, professional, and ATS-friendly resume templates designed for every industry.</p>
-          </div>
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <img src="home.assets/Group 83.svg" alt="">
         </div>
+        <h3>Select your Template</h3>
+        <p>Pick from modern, Professional, and ATS-friendly resume templates designed for every industry.</p>
+      </div>
 
-        <div class="step">
-          <div class="num">2</div>
-          <div class="text">
-            <h4>Add your details</h4>
-            <p>Enter your education, work experience, and skills with our simple, guided form.</p>
-          </div>
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <img src="home.assets/Group 89 (1).svg" alt="">
         </div>
+        <h3>Add your details</h3>
+        <p>Enter your education, work experience, and skills with our simple, guided form.</p>
+      </div>
 
-        <div class="step">
-          <div class="num">3</div>
-          <div class="text">
-            <h4>Customize your Resume</h4>
-            <p>Easily edit fonts, colors, and layouts to make your resume unique and job-ready.</p>
-          </div>
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">3</div>
+          <img src="home.assets/art 1.svg" alt="">
         </div>
+        <h3>Customize your Resume</h3>
+        <p>Easily edit fonts, colors, and layouts to make your resume unique and job ready.</p>
+      </div>
 
-        <div class="step">
-          <div class="num">4</div>
-          <div class="text">
-            <h4>Preview and Download</h4>
-            <p>Check your resume instantly and download it in PDF or Word format.</p>
-          </div>
+      <!-- Step 4 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">4</div>
+          <img src="home.assets/Group 90.svg" alt="">
         </div>
+        <h3>Preview and Download</h3>
+        <p>Check your Resume instantly and download it in PDF or Word format.</p>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="templates-section">
   <div class="temp-h"> <h2>
@@ -140,73 +146,66 @@
     <h2><span class="edit">edit</span> and
       <span class="download">Download</span> easily</h2>
 </div>
-   <section class="templates-section">
-  <div class="container">
-    <div class="templates-scroll">
-      <div class="templates-wrapper" id="templatesWrapper">
-<!-- Template 1 -->
-        <div class="template-card" id="template1" onclick="window.location.href='template1.html'">
-          <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
-        </div>
 
-        <!-- Template 2 -->
-        <div class="template-card" onclick="window.location.href='template2.html'">
-          <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
-        </div>
+  <div class="templates-scroll">
+    <!-- Left Arrow -->
+    <button class="arrow left" id="leftArrow">
+      <i class="fas fa-chevron-left"></i>
+    </button>
 
-        <!-- Template 3 -->
-        <div class="template-card" onclick="window.location.href='template3.html'">
-          <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
-        </div>
+    <div class="templates-wrapper" id="templatesWrapper">
+      <div class="template-card" onclick="window.location.href='template1.html'">
+        <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
+      </div>
 
-        <!-- Template 4 -->
-        <div class="template-card" onclick="window.location.href='template4.html'">
-          <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
-        </div>
+      <div class="template-card">
+        <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
+      </div>
 
-        <!-- Template 5 -->
-        <div class="template-card" onclick="window.location.href='template5.html'">
-          <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
-        </div>
+      <div class="template-card">
+        <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
+      </div>
 
-        <!-- Template 1 -->
-        <div class="template-card" id="template2" onclick="window.location.href='template1.html'">
-          <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
-        </div>
+      <div class="template-card">
+        <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
+      </div>
 
-        <!-- Template 2 -->
-        <div class="template-card" onclick="window.location.href='template2.html'">
-          <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
-        </div>
+      <div class="template-card">
+        <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
+      </div>
+      <div class="template-card">
+        <img src="https://www.resumetemplates.com/wp-content/uploads/2025/03/3590975-restaurant-server-job-description-resume-example.pdf.jpeg" alt="Template 1">
+      </div>
 
-        <!-- Template 3 -->
-        <div class="template-card" onclick="window.location.href='template3.html'">
-          <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
-        </div>
+      <div class="template-card">
+        <img src="https://marketplace.canva.com/EAGIzZzlHCg/3/0/1131w/canva-blue-and-gray-simple-professional-cv-resume-krkiJPv9338.jpg" alt="Template 2">
+      </div>
 
-        <!-- Template 4 -->
-        <div class="template-card" onclick="window.location.href='template4.html'">
-          <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
-        </div>
+      <div class="template-card">
+        <img src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg" alt="Template 3">
+      </div>
 
-        <!-- Template 5 -->
-        <div class="template-card" onclick="window.location.href='template5.html'">
-          <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
-        </div>
+      <div class="template-card">
+        <img src="https://static.resumetrick.com/userspace/7cfd2ebf84b697d6d6832ec9210c7575/1718888899530/cover800.webp" alt="Template 4">
+      </div>
+
+      <div class="template-card">
+        <img src="https://marketplace.canva.com/EAFzSzKZZsg/2/0/1131w/canva-modern-minimalist-cv-resume-I8ItJo4ECp0.jpg" alt="Template 5">
       </div>
     </div>
+
+    <!-- Right Arrow -->
+    <button class="arrow right" id="rightArrow">
+      <i class="fas fa-chevron-right"></i>
+    </button>
   </div>
-</section>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-    <div class="explore-btn">
+  <div class="explore-btn">
       <button>Explore more</button>
     </div>
   </div>
 </section>
+
 
 <section class="testimonial-section">
   <h2>What <span>Clients</span> Says!</h2>
@@ -365,7 +364,6 @@
     <p>All Copyright by Resumeslip</p>
   </div>
 </footer>
-
 
 <script src="home.js"></script>
 </body>
