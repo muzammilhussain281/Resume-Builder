@@ -1,0 +1,284 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  background: white;
+  overflow-x: hidden;
+  margin-top: 0px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: rgb(15, 118, 110);
+  padding: 0;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  top: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 50px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.toggle-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.toggle-btn span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.toggle-btn.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-btn.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    flex-direction: column;
+    background: rgb(15, 118, 110);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    gap: 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "lato";
+}
+
+.contact-section p {
+  max-width: 550px;
+  margin: 0 auto 50px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "lato";
+}
+
+/* Form Box */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "lato";
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background: #00796b;
+  margin: 8px 0 25px;
+  border-radius: 3px;
+}
+
+/* Form Inputs */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "lato";
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s;
+  font-family: "lato";
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border: 1px solid #ccc;
+  font-family: "lato";
+}
+
+
+
+/* Button */
+.contact-form button {
+  align-self: center;
+  background: #00796b;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "lato";
+}
+
+.contact-form button:hover {
+  background: #006357;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #0f7a7a;
+  color: white;
+  padding: 40px 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  gap: 300px;
+}
+
+.footer-column h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: left;
+  padding: 15px 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #e1e1e1;
+}
