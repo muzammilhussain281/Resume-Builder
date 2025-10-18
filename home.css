@@ -46,10 +46,10 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: 700;
+.logo img {
   font-family: 'Inter', sans-serif;
+  height: 50px;
+  margin-left: 70px;
 }
 
 .nav-links {
@@ -571,16 +571,19 @@ body {
 
 .testimonial-wrapper {
   overflow: hidden;
-  width: 100%;
+  width: 92%;
   height: 250px;
+  margin-left: 48px;
+  margin-right: 40px;
+  padding: 0%;
 }
 
 .testimonial-track {
   display: flex;
-  gap: 30px;
+  gap: 100px;
   transition: transform 0.6s ease;
-  height: 200px;
-  width: 1160px;
+  height: 160px;
+  width: 923px;
   margin-top: 30px;
 }
 
@@ -589,14 +592,13 @@ body {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  padding: 25px;
+  padding: 20px;
   text-align: left;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .testimonial.active {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: scale(1.29);  
 }
 
 .user-info {
@@ -1193,13 +1195,20 @@ body {
   }
   
   .templates-wrapper {
-    gap: 20px;
-    padding: 15px;
+    gap: 30px;
+    padding: 10px;
   }
   
   .template-card {
     width: 180px;
     height: 240px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .templates-section button {
+    margin-right: 50px;
+    margin-left: 40px;
   }
   
   .explore-btn {
@@ -1229,13 +1238,27 @@ body {
   
   .testimonial-container {
     padding: 0 10px;
-    gap: 15px;
+    gap: 500px;
   }
   
   .testimonial {
     flex: 0 0 260px;
     padding: 15px;
     min-height: 160px;
+  }
+
+  .testimonial-track {
+    margin-left: 20px;
+  }
+
+  .testimonial-section button {
+  margin-left: 1px;
+  height: 40px;
+  width: 40px;
+  }
+
+  .testimonial.active {
+   transform: scale(1); 
   }
   
   .user-info img {

@@ -43,7 +43,7 @@ const nextBtn = document.querySelector('.right-btn');
 let index = 1;
 
 function updateSlider() {
-  const cardWidth = testimonials[0].offsetWidth + 30;
+  const cardWidth = testimonials[1].offsetWidth + 100;
   track.style.transform = `translateX(-${(index - 1) * cardWidth}px)`;
 
   testimonials.forEach((t, i) => {
