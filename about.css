@@ -159,38 +159,38 @@ body {
 
 
 
-/* Contact Section */
-.contact-section {
+/* About Section */
+.about-section {
   text-align: center;
   padding: 80px 20px;
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: black;
+  margin-top: 25px;
+  
 }
 
-.contact-section h2 {
-  font-size: 2rem;
+.about-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
   margin-bottom: 10px;
-  font-weight: 600;
   font-family: "lato";
 }
 
-.contact-section p {
-  max-width: 550px;
-  margin: 0 auto 50px;
+.about-section .subtitle {
+  font-size: 18px;
   color: #666;
-  font-size: 15px;
-  line-height: 1.6;
+  margin-bottom: 60px;
   font-family: "lato";
 }
 
-/* Form Box */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+/* Content Items */
+.about-item {
+  max-width: 1100px;
+  margin: 0 auto 50px;
   text-align: left;
 }
 
-.contact-form h3 {
+.about-item h3 {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: "lato";
@@ -200,56 +200,86 @@ body {
   width: 40px;
   height: 3px;
   background: #00796b;
-  margin: 8px 0 25px;
+  margin: 8px 0 15px;
   border-radius: 3px;
 }
 
-/* Form Inputs */
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-family: "lato";
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.about-item p {
+  color: #444;
+  line-height: 1.6;
   font-size: 15px;
-  width: 100%;
-  outline: none;
-  transition: border 0.3s;
-  font-family: "lato";
-}
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border: 1px solid #ccc;
   font-family: "lato";
 }
 
 
 
-/* Button */
-.contact-form button {
-  align-self: center;
+
+/* Values Section */
+.values-section {
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.values-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "lato";
+}
+
+.values-section .underline {
+  width: 45px;
+  height: 3px;
   background: #00796b;
-  color: #fff;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 14px;
-  font-family: "lato";
+  border-radius: 3px;
+  margin-bottom: 40px;
 }
 
-.contact-form button:hover {
-  background: #006357;
+/* Grid Layout */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+.value-card {
+  background: #e0f2f1;
+  width: 350px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.value-card i {
+  font-size: 26px;
+  color: #00796b;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Text */
+.value-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "inter";
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  font-family: "inter";
 }
 
 
@@ -267,7 +297,7 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0 50px;
-  gap: 300px;
+  gap:300px;
 }
 
 .footer-column h3 {
@@ -282,6 +312,7 @@ body {
 
 .footer-column ul li {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .footer-column ul li a {
@@ -306,7 +337,6 @@ body {
   font-size: 14px;
   color: #e1e1e1;
 }
-
 
 /* Mobile Devices (480px and below) */
 @media (max-width: 480px) {
