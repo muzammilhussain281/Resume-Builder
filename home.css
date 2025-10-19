@@ -901,31 +901,7 @@ body {
 }
 
 /* Small Tablets and Large Phones (600px - 768px) */
-@media (max-width: 768px) {
-  .navbar {
-    height: auto;
-    padding: 10px 0;
-  }
-  
-  .nav-flex {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .logo {
-    font-size: 1.2rem;
-  }
-  
-  .nav-links {
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .nav-links a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
-  
+@media (max-width: 768px) {  
   .hero {
     min-height: auto;
     padding: 40px 0;
@@ -1065,21 +1041,6 @@ body {
     font-size: 15px;
   }
   
-  .footer-container {
-    padding: 0 30px;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .footer-column {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding: 15px 30px;
-  }
 }
 
 /* Mobile Phones (up to 600px) */
@@ -1091,27 +1052,9 @@ body {
   .container {
     width: 95%;
   }
-  
-  .navbar {
-    padding: 8px 0;
-  }
-  
-  .logo {
-    font-size: 1.1rem;
-  }
-  
-  .nav-links {
-    gap: 5px;
-    font-size: 12px;
-  }
-  
-  .nav-links a {
-    margin: 0 5px;
-    font-size: 12px;
-  }
-  
+
   .hero {
-    margin-top: 100px;
+    margin-top: 40px;
     padding: 30px 0;
   }
   
@@ -1363,25 +1306,7 @@ body {
     font-size: 14px;
   }
   
-  .footer-container {
-    padding: 0 20px;
-  }
   
-  .footer-column h3 {
-    font-size: 16px;
-  }
-  
-  .footer-column ul li {
-    font-size: 14px;
-  }
-  
-  .footer-bottom {
-    padding: 15px 20px;
-  }
-  
-  .footer-bottom p {
-    font-size: 12px;
-  }
 }
 
 /* Extra Small Phones (up to 375px) */
