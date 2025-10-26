@@ -54,12 +54,21 @@ function displayTemplates(page) {
   const pageTemplates = templates.slice(start, end);
 
   pageTemplates.forEach((t) => {
-    const card = document.createElement("div");
-    card.classList.add("template-card");
-    card.innerHTML = `<img src="${t.img}" alt="Template">`;
-    grid.appendChild(card);
+  const card = document.createElement("div");
+  card.classList.add("template-card");
+  card.innerHTML = `<img src="${t.img}" alt="Template">`;
+
+  // On click -> go to editor page with image link
+  card.addEventListener("click", () => {
+    const encoded = encodeURIComponent(t.img);
+    window.location.href = `editor.html?img=${encoded}`;
   });
+
+  grid.appendChild(card);
+});
 }
+
+
 
 // Function to create pagination buttons
 function setupPagination() {
